@@ -9,16 +9,18 @@ namespace PlyTracker.Core
     {
         private CancellationTokenSource _tokenSource;
 
-        public DiscordBot(IDiscordConnection discordConnection, IBotConfiguration botConfig, IDiscordImpersonation impersonation)
-        {
-
-        }
-
         public IBotConfiguration BotConfiguration { get; }
 
         public IDiscordConnection DiscordConnection { get; }
 
         public IDiscordImpersonation Impersonation { get; }
+
+        public DiscordBot(IDiscordConnection discordConnection, IBotConfiguration botConfig, IDiscordImpersonation impersonation)
+        {
+            DiscordConnection = discordConnection;
+            BotConfiguration = botConfig;
+            Impersonation = impersonation;
+        }
 
         public async Task StartAsync()
         {
