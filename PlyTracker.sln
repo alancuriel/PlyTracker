@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlyTracker.InversionOfContr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlyTracker.Core", "src\PlyTracker.Core\PlyTracker.Core.csproj", "{A4911C49-C4B9-48DF-A43F-3E20D84F38AC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlyTracker.ConsoleApplication", "src\PlyTracker.Console\PlyTracker.ConsoleApplication.csproj", "{7BBFE74B-521C-4D19-A4AF-820F86699B34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{A4911C49-C4B9-48DF-A43F-3E20D84F38AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4911C49-C4B9-48DF-A43F-3E20D84F38AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4911C49-C4B9-48DF-A43F-3E20D84F38AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBFE74B-521C-4D19-A4AF-820F86699B34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBFE74B-521C-4D19-A4AF-820F86699B34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBFE74B-521C-4D19-A4AF-820F86699B34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBFE74B-521C-4D19-A4AF-820F86699B34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A162709A-D99F-449B-8377-F3EF6E58B19E} = {1248D754-EAAA-4F21-95CD-32094E9C3AB4}
 		{A4911C49-C4B9-48DF-A43F-3E20D84F38AC} = {1248D754-EAAA-4F21-95CD-32094E9C3AB4}
+		{7BBFE74B-521C-4D19-A4AF-820F86699B34} = {1248D754-EAAA-4F21-95CD-32094E9C3AB4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5B8F0D03-4702-476F-B883-73875396679F}
