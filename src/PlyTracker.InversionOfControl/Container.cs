@@ -5,15 +5,23 @@ using System.Reflection;
 using System.Text;
 
 using Microsoft.Extensions.DependencyInjection;
+using PlyTracker.Core;
 using PlyTracker.Core.Attributes;
+using PlyTracker.Core.Configuration;
+using PlyTracker.Core.Discord;
 using PlyTracker.Core.Entities;
+using PlyTracker.Discord;
 
 namespace PlyTracker.InversionOfControl
 {
     public static class Container
     {
         public static IServiceCollection AddBotTypes(this IServiceCollection collection)
-                => collection.AddBotServices();
+                => collection.AddSingleton<IBotConfiguration, BotConfiguration>()
+            .AddSingleton<IDiscordConnection, PlyDiscordConnection>()
+            .AddSingleton<IDiscord, PlyDiscordClient>()
+            .AddSingleton<IDiscordImpersonation, DiscordImpersonation>()
+            .AddBotServices();
 
         private static IServiceCollection AddBotServices(this IServiceCollection collection)
         {
